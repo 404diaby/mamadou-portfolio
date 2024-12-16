@@ -1,0 +1,13 @@
+#linksContainer { bottom:2% !important; }
+
+
+.btn.btn-primary{ background-color: #9c92ac; transition: all .5s ease-in-out !important;}
+.btn.btn-primary:hover{ background-color: #776c88 !important; transform: scale(1.1); }
+#linksContainer{ background-color: #9c92ac;}
+.linksButton:hover { background-color: #776c88 !important; transform: scale(1) !important; }
+/* About part -> nav pill */
+.nav-link{ color: #9c92ac !important; }
+.nav-link:hover{ color: #776c88 !important; }
+.nav-link.active{ background-color: #9c92ac !important; color: #DFDBE5 !important; }
+
+
