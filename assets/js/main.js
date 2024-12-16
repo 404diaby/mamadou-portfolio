@@ -3,8 +3,8 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 //redirection sur le HeroSection
-if(window.location.href != 'http://localhost:3000/public/index.html#heroSection'){
-    window.location.href = 'http://localhost:3000/public/index.html#heroSection';
+if(window.location.href != 'diaby-mamadou.vercel.app/index.html#heroSection'){
+    window.location.href = 'diaby-mamadou.vercel.app/index.html#heroSection';
 }
 
 
