@@ -21,7 +21,7 @@ class ProjectCard {
 const projectCardJSON = {
 
     1 : new ProjectCard(
-        "/public/images/project/gsbVisite/heroPage.jpg",
+        "images/project/gsbVisite/heroPage.jpg",
         "projet",
         "gsbVisite",
         "Projet PPE (Projet personnel encadré) durant ma deuxième année de BTS SIO option SLAM.",
@@ -33,7 +33,7 @@ const projectCardJSON = {
         true
     ),
     2 : new ProjectCard(
-        "/public/images/project/traducteur_markdown_html/heroPage.jpg",
+        "images/project/traducteur_markdown_html/heroPage.jpg",
         "project",
         "LaBonneAnnonce",
         "Projet (groupe) durant ma Licence Professionnelle Métier de L'Informatique: Application Web",
@@ -45,7 +45,7 @@ const projectCardJSON = {
         true
     ),
     3 : new ProjectCard(
-        "/public/images/project/gsbVisite/heroPage.jpg",
+        "images/project/gsbVisite/heroPage.jpg",
         "project",
         "Mosaïque Ottomane",
         "Projet (seul) durant ma Licence Professionnelle Métier de L'Informatique : Application Web",
@@ -57,7 +57,7 @@ const projectCardJSON = {
         true
     ),
     4 : new ProjectCard(
-        "/public/images/project/traducteur_markdown_html/heroPage.jpg",
+        "images/project/traducteur_markdown_html/heroPage.jpg",
         "projet",
         "TraducteurMarkdownHtml",
         "Projet tutoret durant ma Licence Professionnelle Métier de l'Informatique : Application Web",
@@ -69,7 +69,7 @@ const projectCardJSON = {
         true
     ),
     5 : new ProjectCard(
-        "/public/images/project/github-user-search/preview-dark-mode.png",
+        "images/project/github-user-search/preview-dark-mode.png",
         "project",
         "Github-user-search",
         "Projet personnel.",
@@ -81,7 +81,7 @@ const projectCardJSON = {
         false
     ),
     6 : new ProjectCard(
-        "/public/images/project/todoApp/heroPage.png",
+        "images/project/todoApp/heroPage.png",
         "project",
         "TodoApp",
         "Projet personnel",
@@ -93,7 +93,7 @@ const projectCardJSON = {
         false
     ),
     7 : new ProjectCard(
-        "/public/images/project/portfolio/heroPage.png",
+        "images/project/portfolio/heroPage.png",
         "project",
         "Portfolio",
         "Mon premier portfolio fait à l'occasion de l'épreuve E4 de mon BTS SIO option SLAM",
@@ -105,7 +105,7 @@ const projectCardJSON = {
         false
     ),
     8 : new ProjectCard(
-        "/public/images/project/traducteur_markdown_html/heroPage.jpg",
+        "images/project/traducteur_markdown_html/heroPage.jpg",
         "project",
         "RapportModeleDonnees",
         "Projet réalise lors de mon stage à OKTEO durant ma deuxième année de BTS SIO option SLAM",

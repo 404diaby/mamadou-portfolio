@@ -3,9 +3,10 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 //redirection sur le HeroSection
-if(window.location.href != 'https://diaby-mamadou.vercel.app/index.html#heroSection'){
+/*if(window.location.href != 'https://diaby-mamadou.vercel.app/index.html#heroSection'){
     window.location.href = 'https://diaby-mamadou.vercel.app/index.html#heroSection';
 }
+*/
 
 
 // Navigation par flèche sur la page
