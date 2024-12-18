@@ -21,16 +21,16 @@ class ProjectCard {
 const projectCardJSON = {
 
     1 : new ProjectCard(
-        "images/project/gsbVisite/heroPage.jpg",
+        "images/project/gsbVisite/1.png",
         "projet",
         "gsbVisite",
         "Projet PPE (Projet personnel encadré) durant ma deuxième année de BTS SIO option SLAM.",
         ["Php","Html","Css","Vanilla Javascript","MySql"],
         "gsbVisite",
+        "https://github.com/404diaby/gsbVisite",
         "",
-        "",
-        true,
-        true
+        false,
+        false
     ),
     2 : new ProjectCard(
         "images/project/traducteur_markdown_html/heroPage.jpg",
