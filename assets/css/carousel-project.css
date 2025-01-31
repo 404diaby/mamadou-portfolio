@@ -1,0 +1,66 @@
+
+
+
+#projectSection div:first-child{ height: 70dvh; }
+#projectSection .container .container { height: 100% ; width: 100%; }
+
+
+
+.carousel-project {
+  background: #EEE;
+  height: 100% !important;
+  width: 100%;
+  padding: 1%;
+
+}
+
+.carousel-cell-project {
+  /*width: 28%;*/
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  background: #776c88;
+  border-radius: 5px;
+}
+
+.carousel-cell-project.is-selected {
+  border-color: #ED2;
+}
+/* button */
+.flickity-button {
+  background: #9c92ac;
+  transition: all .5s ease-in-out;
+}
+.flickity-button:hover {
+   background-color: #776c88; width: 32px; height: 32px;  }
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+
+
+
+@media (min-width: 768px) {
+    .carousel-cell-project { width: 50%; }
+}
+
+@media (min-width: 992px) {
+    .carousel-cell-project { width: 38%; }
+  #projectSection div:first-child{
+    height: 60dvh;}
+ }
+
+
