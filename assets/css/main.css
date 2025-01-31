@@ -22,6 +22,11 @@ section{
 .h-70{
     height: 70% !important;
 }
+.capitalize-first::first-letter {
+    text-transform: uppercase;
+    font-size: 1.5em; /* Optionnel : agrandir la première lettre */
+    font-weight: bold; /* Optionnel : mettre en gras */
+}
 
 
 @media (min-width: 576px) {

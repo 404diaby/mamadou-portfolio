@@ -21,30 +21,42 @@ class ProjectCard {
 const projectCardJSON = {
 
     1 : new ProjectCard(
+        "images/project/sushiShop/1.png",
+        "project",
+        "SushiShop",
+        "",
+        ["wordpress"],
+        "sushiShop",
+        "",
+        "https://sushishop.rf.gd/?i=1",
+        true,
+        true
+    ),
+    2 : new ProjectCard(
         "images/project/gsbVisite/1.png",
         "projet",
         "gsbVisite",
         "Projet PPE (Projet personnel encadré) durant ma deuxième année de BTS SIO option SLAM.",
-        ["Php","Html","Css","Vanilla Javascript","MySql"],
+        ["Php", "Html", "Css", "Vanilla Javascript", "MySql"],
         "gsbVisite",
         "https://github.com/404diaby/gsbVisite",
-        "",
+        "https://gsbvisite.rf.gd/",
         false,
         false
     ),
-    2 : new ProjectCard(
+    3: new ProjectCard(
         "images/project/traducteur_markdown_html/heroPage.jpg",
         "project",
         "LaBonneAnnonce",
         "Projet (groupe) durant ma Licence Professionnelle Métier de L'Informatique: Application Web",
-        ["Php","Mysql","AzureDevOps"],
+        ["Php", "Mysql", "AzureDevOps"],
         "traducteurMarkdownHtml",
         "",
         "",
         true,
         true
     ),
-    3 : new ProjectCard(
+    4 : new ProjectCard(
         "images/project/gsbVisite/heroPage.jpg",
         "project",
         "Mosaïque Ottomane",
@@ -56,60 +68,60 @@ const projectCardJSON = {
         true,
         true
     ),
-    4 : new ProjectCard(
+5: new ProjectCard(
         "images/project/traducteur_markdown_html/heroPage.jpg",
         "projet",
         "TraducteurMarkdownHtml",
         "Projet tutoret durant ma Licence Professionnelle Métier de l'Informatique : Application Web",
-        ["Java","Html","Bootstrap","Vanilla Javascript"],
+        ["Java", "Html", "Bootstrap", "Vanilla Javascript"],
         "traducteurMarkdownHtml",
         "",
         "",
         true,
         true
     ),
-    5 : new ProjectCard(
+    6 : new ProjectCard(
         "images/project/github-user-search/preview-dark-mode.png",
         "project",
         "Github-user-search",
         "Projet personnel.",
-        ["Html","Css","Vanilla Javascript","API"],
+        ["Html", "Css", "Vanilla Javascript", "API"],
         "githubUserSearch",
         "https://github.com/404diaby/github-user-search",
         "https://github-user-search-ten-green.vercel.app/",
         false,
         false
     ),
-    6 : new ProjectCard(
+    7: new ProjectCard(
         "images/project/todoApp/heroPage.png",
         "project",
         "TodoApp",
         "Projet personnel",
-        ["Html","Css","Vanilla Javascript"],
+        ["Html", "Css", "Vanilla Javascript"],
         "todoApp",
         "https://github.com/404diaby/ToDoList",
         "https://404diaby-to-do-list-app.vercel.app/",
         false,
         false
     ),
-    7 : new ProjectCard(
+    8 :new ProjectCard(
         "images/project/portfolio/heroPage.png",
         "project",
         "Portfolio",
         "Mon premier portfolio fait à l'occasion de l'épreuve E4 de mon BTS SIO option SLAM",
-        ["Html","Css","Vanilla Javascript","Jquery","Isotope","Flickity","Smooth-scroll"],
+        ["Html", "Css", "Vanilla Javascript", "Jquery", "Isotope", "Flickity", "Smooth-scroll"],
         "portfolio",
         "https://github.com/404diaby/oldportfolio",
         "https://diaby-mamadou-old-portfolio.vercel.app/index.html",
         false,
         false
     ),
-    8 : new ProjectCard(
+    9 : new ProjectCard(
         "images/project/traducteur_markdown_html/heroPage.jpg",
         "project",
         "RapportModeleDonnees",
         "Projet réalise lors de mon stage à OKTEO durant ma deuxième année de BTS SIO option SLAM",
-        ["Java","Maven","PostgreSQL"],
+        ["Java", "Maven", "PostgreSQL"],
         "rapportModeleDonnees",
         "",
         "",
@@ -117,11 +129,11 @@ const projectCardJSON = {
         false
     )
 
-   // 11 : "APE | | sdis21 | gsbapplifrais |  | advisor generator | CALCULATOR "
+    // 11 : "APE | | sdis21 | gsbapplifrais |  | advisor generator | CALCULATOR "
 }
 //
 const projectCardTemplate = document.querySelector('#projectCard');
-const projectCarouselCell = document.querySelectorAll('.carousel-cell-project');
+const projectCarouselCells = document.querySelectorAll('.carousel-cell-project');
 const toastLiveExample = document.getElementById('liveToast'); // Élément du toast
 
 // Création ou récupération de l'instance du toast avec des options
@@ -131,8 +143,7 @@ const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample, {
     delay: 3000      // Délai avant le masquage automatique (en millisecondes)
 });
 
-
-for(let x = 1 ; x <= projectCarouselCell.length ; x++ ){
+for(let x = 1 ; x <  projectCarouselCells.length ; x++ ){
     const card = projectCardTemplate.content.cloneNode(true);
     const img = card.querySelector('.card-img-top');
     img.setAttribute('src',projectCardJSON[x].image_src);
@@ -184,8 +195,8 @@ for(let x = 1 ; x <= projectCarouselCell.length ; x++ ){
     }else{
         live.setAttribute('href', projectCardJSON[x].live);
     }
-
-    projectCarouselCell[x-1].append(card);
+    console.log(card)
+    projectCarouselCells[x].append(card);
 }
 
 function setPill(tech) {

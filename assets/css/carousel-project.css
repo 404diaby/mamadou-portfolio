@@ -1,7 +1,7 @@
 
 
 
-#projectSection div:first-child{ height: 70vh; }
+#projectSection div:first-child{ height: 70dvh; }
 #projectSection .container .container { height: 100% ; width: 100%; }
 
 
@@ -53,14 +53,14 @@
 
 
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .carousel-cell-project { width: 50%; }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .carousel-cell-project { width: 38%; }
   #projectSection div:first-child{
-    height: 60vh;}
+    height: 60dvh;}
  }
 
 

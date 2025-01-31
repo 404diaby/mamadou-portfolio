@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8" >
@@ -29,12 +29,12 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/links.css">
-    <script defer src="assets/js/main.js"></script>
+   <script defer src="assets/js/main.js"></script>
     <script defer src="assets/js/carousel-project.js"></script>
     <link rel="stylesheet" href="assets/css/carousel-project.css">
-    <script defer src="assets/js/card-project.js"></script>
-    <script defer  src="assets/js/fonction-footer.js"></script>
-    <script defer  src="assets/js/fonction-links.js"></script>
+   <script defer src="assets/js/card-project.js"></script>
+   <!--  <script defer  src="assets/js/fonction-footer.js"></script>
+    <script defer  src="assets/js/fonction-links.js"></script>-->
     <link rel="stylesheet" href="assets/css/about.css">
 
 </head>
@@ -70,7 +70,7 @@
       <!-------------------- End back to top part ------------------------->
     </div>
     <!-------------------- End footer part ------------------------>
-     
+
     <!-------------------- Link part ------------------------>
     <div id="linksContainer" class="rounded-3 position-fixed bottom-0 start-50 translate-middle-x placeholder-wave" >  <!--aria-hidden="t"-->
       <div class="collapse mb-1" id="collapseLinks">
@@ -80,7 +80,7 @@
         <button  type="button" class="linksButton btn btn-primary border border-0 "   aria-label="Basic example" data-href="https://bento.me/404diaby">📌</button>
         <button type="button" class=" linksButton btn btn-primary border border-0 " aria-label="Basic example" data-href="https://flowcv.com/resume/o1wil6ud85" > 📄 </button>
         <button type="button" class=" linksButton btn btn-primary border border-0 " aria-label="Basic example" data-href="https://github.com/404diaby">🧑‍💻</button>
-        <button type="button" class="linksButton btn btn-primary border border-0 "  aria-label="Basic example"  data-href="https://www.linkedin.com/in/mamadou-diaby-107351231/" >🔗</button>  
+        <button type="button" class="linksButton btn btn-primary border border-0 "  aria-label="Basic example"  data-href="https://www.linkedin.com/in/mamadou-diaby-107351231/" >🔗</button>
       </div>
     </div>
     <!-------------------- End link part ------------------------>
@@ -93,52 +93,87 @@
         </section>
         <section id="aboutSection" class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center border border-success">
           <h2 class="display-6">A propos de moi</h2>
-          <ul class="nav nav-pills container d-flex justify-content-end mb-2" id="myTab" role="tablist">
+          <ul class="nav nav-pills container d-flex justify-content-start justify-content-md-end mb-2"  id="myTab" role="tablist">
               <li class="nav-item " role="presentation">
-                  <a class="nav-link active placeholder-wave" id="presentation-tab" data-bs-toggle="tab" href="#presentation" role="tab" aria-controls="presentation" aria-selected="true">Présentation</a>
+                  <a class="nav-link px-2 py-1 px-md-3 py-md-2 active placeholder-wave" id="presentation-tab" data-bs-toggle="tab" href="#presentation" role="tab" aria-controls="presentation" aria-selected="true">Présentation</a>
               </li>
               <li class="nav-item" role="presentation">
-                  <a class="nav-link placeholder-wave" id="competences-tab" data-bs-toggle="tab" href="#competences" role="tab" aria-controls="competences" aria-selected="false">Compétences</a>
+                  <a class="nav-link px-2 py-1 px-md-3 py-md-2 placeholder-wave" id="competences-tab" data-bs-toggle="tab" href="#competences" role="tab" aria-controls="competences" aria-selected="false">Compétences</a>
               </li>
               <li class="nav-item " role="presentation">
-                <a class="nav-link placeholder-wave" id="softSkills-tab" data-bs-toggle="tab" href="#softSkills" role="tab" aria-controls="softSkills" aria-selected="true">Soft skills</a>
+                <a class="nav-link px-2 py-1 px-md-3 py-md-2 placeholder-wave" id="softSkills-tab" data-bs-toggle="tab" href="#softSkills" role="tab" aria-controls="softSkills" aria-selected="true">Soft skills</a>
             </li>
           </ul>
           <div class="tab-content container rounded-3 bg-light p-4 d-flex justify-content-center align-items-center" id="myTabContent" >
               <div class="tab-pane fade show active fs-5 " id="presentation" role="tabpanel" aria-labelledby="presentation-tab" style="height: 100% !important; width: auto !important;" >
-                <div class="row g-0 bg-body-secondary position-relative  rounded-3 overflow-scroll" style="height: 100% !important; width: auto !important;">
-                  <div class="col-md-5  mb-md-0 p-md-4" style="height: 100%;">
-                    <img src="images/photo_profile.JPEG" class="img-thumbnail " alt="profile" style="height:100% !important;">
+                <div class="row g-0 bg-body-secondary position-relative  rounded-3 overflow-scroll overflow-md-hidden d-md-none d-lg-flex" style="height: 100% !important; width: auto !important;">
+                  <div class="col-md-6  col-lg-5  mb-md-0 p-md-4 h-md-100  ">
+                    <img src="images/photo_profile.JPEG" class="img-thumbnail img-fluid " alt="profile" style="">
                   </div>
-                  <div class="col-md-7 p-2 p-md-4 ps-md-0">
+                  <div class="col-md-6 col-lg-7 p-2 p-md-4 ps-md-0">
                     <!--<h5 class="mt-0">ABOUT : ma presentation + mes competense et leurs stack/tech/tools associer</h5>-->
                     <p class=" text-md-start ">
                     Je suis DIABY Mamadou, étudiant en informatique, passionné par la création d'applications performantes et intuitives.
-                        <br class="d-md-none">
+                        <br> <br>
                     Curieux de nature et technophile, je souhaite transformer des idées en expériences numériques.
 
-                        <br class="d-md-none"><br>
+                        <br><br>
 
-                      
-               Après l'obtention de mon diplôme de BTS SIO option SLAM, j’ai décidé de poursuivre mes études vers la 
-               Licence Professionnelle Métier de l'Informatique  Application Web afin de me spécialiser dans le développement full-stack. <br class="d-md-none"><br class="d-md-none">
+
+               Après l'obtention de mon diplôme de BTS SIO option SLAM, j’ai décidé de poursuivre mes études vers la
+               Licence Professionnelle Métier de l'Informatique  Application Web afin de me spécialiser dans le développement full-stack. <br ><br>
                 Mon objectif est de développer des solutions efficaces, maintenables et élégantes. <strong> Je suis activement à la recherche d'un stage en tant de développeur full-stack </strong>où je pourrai mettre en pratique mes compétences et continuer à apprendre.
-                        <br class="d-md-none"><br>
+                        <br><br>
 
                     Fun fact : Quand je ne code pas, J'aime sortir pour marcher et courir, que ce soit en ville, en pleine nature ou alors je me perds dans les jeux vidéo, le cinéma.
-                        <br class="d-md-none"><br>
+                        <br><br>
 
                    <span class="fs-6 d-flex flex-column align-items-center d-lg-inline"> Vous voulez en savoir plus ?
                        <a class="icon-link icon-link-hover pb-2 pb-lg-0" href="https://flowcv.com/resume/o1wil6ud85" target="_blank" > <span>📝</span>Consulter mon CV</a>
                        <span class=" d-none d-lg-inline">|</span>
                        <a class="icon-link icon-link-hover" href="#projectSection"> <span>📁</span>Découvrir mes projets</a>
                     </span>
-      
-                    
+
+
                     </p>
                   </div>
                 </div>
+                <div class=" row d-none d-md-flex d-lg-none bg-body-relative position relative rounded-3 overflow-scroll " style="height: 100% !important; width: auto !important;">
+                          <div class="col">
+                              <!-- Image flottante à gauche -->
+                              <img src="images/photo_profile.JPEG" class="img-thumbnail float-start me-3 w-50 " alt="profile" style="">
+                              <!-- Paragraphe -->
+                              <div class="capitalize-first">
+                                  <!--<h5 class="mt-0">ABOUT : ma presentation + mes competense et leurs stack/tech/tools associer</h5>-->
+                                  <p class=" text-md-start ">
+                                      Je suis DIABY Mamadou, étudiant en informatique, passionné par la création d'applications performantes et intuitives.
+                                      <br>
+                                      Curieux de nature et technophile, je souhaite transformer des idées en expériences numériques.
 
+                                      <br>
+
+
+                                      Après l'obtention de mon diplôme de BTS SIO option SLAM, j’ai décidé de poursuivre mes études vers la
+                                      Licence Professionnelle Métier de l'Informatique  Application Web afin de me spécialiser dans le développement full-stack. <br ><br>
+                                      Mon objectif est de développer des solutions efficaces, maintenables et élégantes. <strong> Je suis activement à la recherche d'un stage en tant de développeur full-stack </strong>où je pourrai mettre en pratique mes compétences et continuer à apprendre.
+                                      <br><br>
+                                      <span class="fs-6 d-flex justify-content-center "> Vous voulez en savoir plus ?
+                       <a class="icon-link icon-link-hover pb-2 pb-lg-0" href="https://flowcv.com/resume/o1wil6ud85" target="_blank" > <span>📝</span>Consulter mon CV</a>
+                       <span class=" d-none d-lg-inline">|</span>
+                       <a class="icon-link icon-link-hover" href="#projectSection"> <span>📁</span>Découvrir mes projets</a>
+                    </span>
+                                      <br>
+
+                                      Fun fact : Quand je ne code pas, J'aime sortir pour marcher et courir, que ce soit en ville, en pleine nature ou alors je me perds dans les jeux vidéo, le cinéma.
+                                      <br>
+
+
+
+
+                                  </p>
+                              </div>
+                          </div>
+                  </div>
               </div>
               <div class="tab-pane fade container  overflow-scroll " id="competences" role="tabpanel" aria-labelledby="competences-tab"  style="height: 100%;" >
                <div class="row grow  text-center " >
@@ -183,8 +218,6 @@
                     <div class="card-header">Conception d'application mobile </div>
                     <div class="card-footer text-body-secondary d-flex justify-content-around align-items-center">
                       <img class="tools-logo" src="images/tools-logo/kotlin.png" alt="kotlin" srcset="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Kotlin">
-                        <img class="tools-logo" src="images/tools-logo/flutter.png" alt="flutter" srcset="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Flutter" />
-
                     </div>
                   </div>
                 </div>
@@ -209,7 +242,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grow-item col-sm-6 col-lg-4 mb-4" >
+                <div class="grow-item col-sm-6 col-lg-4 mb-4 d-none" >
                   <div class="card text-bg-light border-secondary " >
                     <div class="card-header">Notion de cybersécurité</div>
                     <div class="card-footer text-body-secondary d-flex justify-content-around align-items-center">
@@ -294,16 +327,16 @@
     Organise-les sous forme de catégories pour une meilleure lisibilité :
     Frontend : HTML5, CSS3, JavaScript (React, Angular, Vue.js).
     Backend : Node.js, Express, Laravel, Django.
-    
+
     DevOps et outils : Docker, Kubernetes, AWS, Git/GitHub, CI/CD.
     Autres compétences : tests unitaires (Jest, Mocha), intégration d’API REST/GraphQL.
     e. Outils que tu maîtrises
     Ajoute des icônes ou logos pour chaque outil/framework (par exemple : Git, VS Code, Postman).
     Option : Regroupe-les dans une grille ou une ligne horizontale animée.
-    
-    
+
+
     Ce que j’apporte :
-    
+
     Des interfaces intuitives et dynamiques (React, Vue.js).
     Des systèmes backend robustes et sécurisés (Node.js, Laravel, Django).
     Une expertise en bases de données (PostgreSQL, MongoDB) et en intégration d’API (REST/GraphQL).
@@ -412,41 +445,35 @@
               </div>
           </div>
       </section>
-        <section id="projectSection" class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center border border-warning">
+        <section id="projectSection" class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center border border-warning" style="height: 100dvh">
             <h2 class="display-6">Mes travaux </h2>
             <div class=" container rounded-3 bg-light p-4 d-flex justify-content-center align-items-center" >
               <div class=" container bg-body-secondary  rounded-3" >
                   <div class="carousel-project rounded-3 " >
-                    <div class="carousel-cell-project"></div>
-                    <div class="carousel-cell-project"></div>
-                    <div class="carousel-cell-project"></div>
-                    <div class="carousel-cell-project"></div>
-                    <div class="carousel-cell-project"></div>
-                    <div class=" carousel-cell-project ">
-                        <!--
-                      <div class="card h-100">
-                        <img src="images/project/portfolio/heroPage.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Portfolio</h5>
-                          <p class="card-text">Mon premier portfolio fait à l'ocassion de l'épreuve E4 de mon BTS SIO option SLAM </p>
-                          <p class="card-text">Techs/Tools : Html - Css - Vanilla Javascript - Jquery - Isotope - Flickity - Smooth-scroll </p>
-                        </div>
-                        <div class="card-footer text-body-secondary d-flex justify-content-around align-items-center">
-                          <button class="btn btn-primary placeholder-wave border border-0" data-bs-toggle="modal" data-bs-target="#portfolioCarouselModal">🎥</button>
-                          <a href="https://github.com/404diaby/newPortfolio" class="btn btn-primary placeholder-wave border border-0">🧑‍💻</a>
-                          <a target="_blank" href="https://diaby-mamadou.vercel.app" class="btn btn-primary placeholder-wave border border-0">🌍 </a>
-                        </div>
-                      </div>
-                      -->
-                    </div>
-                    <div class="carousel-cell-project"></div>
-                   <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+                      <div class="carousel-cell-project"></div>
+
                 </div>
               </div>
            </div>
         </section>
     </div>
-  
+
 
 <!-- Project Modal  Part -->
     <!-- portfolio Modal -->
@@ -559,6 +586,43 @@
         </div>
     </div>
     <!-- End gsbVisite Modal -->
+<!-- sushiShop Modal  -->
+<div class="modal fade carouselModal" id="sushiShopCarouselModal"  aria-labelledby="sushiShopCarouselModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sushiShopCarouselModalLabel">SushiShop </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Carousel Flickity     ( data-flickity='{  "autoPlay": 3000,  "pageDots": false, "fade": true,"imagesLoaded": true }'  ) -->
+                <div class="carousel-modal" >
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/1.png" alt="Slide 1"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/2.png" alt="Slide 2"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/4.png" alt="Slide 4"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/5.png" alt="Slide 5"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/6.png" alt="Slide 6"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/7.png" alt="Slide 7"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/8.png" alt="Slide 8"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/9.png" alt="Slide 9"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/10.png" alt="Slide 10"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/11.png" alt="Slide 11"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/12.png" alt="Slide 12"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/13.png" alt="Slide 13"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/14.png" alt="Slide 14"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/15.png" alt="Slide 15"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/16.png" alt="Slide 16"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/17.png" alt="Slide 17"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/18.png" alt="Slide 18"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/19.png" alt="Slide 19"></div>
+                    <div class="carousel-cell-modal"><img class="img-fluid" src="images/project/sushiShop/20.png" alt="Slide 20"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End sushiShop Modal -->
     <!-- Rapport Modele données Modal  -->
     <div class="modal fade carouselModal" id="rapportModeleDonneesCarouselModal"  aria-labelledby="rapportModeleDonneesCarouselModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -574,7 +638,7 @@
                             <div class="img-fluid d-flex justify-content-center align-items-center  text-center" style="height:650px !important;" ><span class="mx-3 fst-italic display-6">Une application pour permettre la génération d’un rapport automatique de modèle de base de données PostgreSQL</span></div>
                         </div>
                         <div class="carousel-cell-modal">
-                            <iframe class="img-fluid" src="https://prezi.com/p/embed/BhlwGHwjJOQ72cHDY5qv/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="650" width="1120" style="height:650px !important;"></iframe>
+                           <!-- <iframe class="img-fluid" src="https://prezi.com/p/embed/BhlwGHwjJOQ72cHDY5qv/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="650" width="1120" style="height:650px !important;"></iframe>-->
                         </div>
                     </div>
                 </div>
@@ -619,21 +683,21 @@
 
 <!-- template section-->
 <template id="projectCard">
-    <div class="card h-100 ">
-        <img src="" class="card-img-top h-50  " alt="...">
-        <div class="card-body">
-            <p class="card-text"> </p>
-            <h5 class="card-title"></h5>
+        <div class="card h-100 ">
+            <img src="" class="card-img-top h-50  " alt="...">
+            <div class="card-body">
+                <p class="card-text"> </p>
+                <h5 class="card-title"></h5>
 
-            <p class="card-text"> </p>
-            <p class="card-text"> </p>
+                <p class="card-text"> </p>
+                <p class="card-text"> </p>
+            </div>
+            <div class="card-footer text-body-secondary d-flex justify-content-around align-items-center">
+                <button class="btn btn-primary placeholder-wave border border-0" data-bs-toggle="modal" data-bs-target="" >🎥</button>
+                <a href="" target="_blank"  class="btn btn-primary placeholder-wave border border-0">🧑‍💻</a>
+                <a href="" target="_blank" class="btn btn-primary placeholder-wave border border-0">🌍 </a>
+            </div>
         </div>
-        <div class="card-footer text-body-secondary d-flex justify-content-around align-items-center">
-            <button class="btn btn-primary placeholder-wave border border-0" data-bs-toggle="modal" data-bs-target="" >🎥</button>
-            <a href="" target="_blank"  class="btn btn-primary placeholder-wave border border-0">🧑‍💻</a>
-            <a href="" target="_blank" class="btn btn-primary placeholder-wave border border-0">🌍 </a>
-        </div>
-    </div>
 </template>
 <!-- End template section -->
 
