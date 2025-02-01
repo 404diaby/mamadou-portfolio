@@ -24,7 +24,7 @@ const projectCardJSON = {
         "images/project/sushiShop/1.png",
         "project",
         "SushiShop",
-        "",
+        "Projet durant ma Licence Professionnelle Métier de L'Informatique: Application Web",
         ["wordpress"],
         "sushiShop",
         "",
