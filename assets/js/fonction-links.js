@@ -6,12 +6,6 @@ const allLinksButton = document.querySelectorAll('.linksButton');
 
 const isTabletOrDesktop = window.matchMedia("(min-width: 768px)").matches;
 
-if (isTabletOrDesktop) {
-const autoClickor_linksContainer = setInterval(() => {
-    linksButton.click();
-  }, 10000);
-  // 
-}
 
 // ajouter volume au content quand le bottuon est cliqué
 linksButton.addEventListener('click' , () => {
@@ -34,8 +28,15 @@ linksButton.addEventListener('click' , () => {
  
 });
 
-linksButton.click();
 
+
+if (isTabletOrDesktop) {
+  const autoClickor_linksContainer = setInterval(() => {
+      linksButton.click();
+    }, 10000);
+    // 
+  }
+  
 function openLink(href) {
     window.open(href, '_blank');
 }
