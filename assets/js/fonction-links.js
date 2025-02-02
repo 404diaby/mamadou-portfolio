@@ -4,11 +4,15 @@ const linksContent = document.getElementById('collapseLinks');
 const linksButton = document.getElementById('linksButton');
 const allLinksButton = document.querySelectorAll('.linksButton');
 
+const isTabletOrDesktop = window.matchMedia("(min-width: 768px)").matches;
 
+if (isTabletOrDesktop) {
 const autoClickor_linksContainer = setInterval(() => {
-  linksButton.click();
-}, 10000);
-// 
+    linksButton.click();
+  }, 10000);
+  // 
+}
+
 // ajouter volume au content quand le bottuon est cliqué
 linksButton.addEventListener('click' , () => {
 
