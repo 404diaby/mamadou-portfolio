@@ -19,8 +19,19 @@ class ProjectCard {
 }
 
 const projectCardJSON = {
-
-    1 : new ProjectCard(
+    0 : new ProjectCard(
+        "images/project/leMauvaiscoins/1.png",
+        "project",
+        "LeMauvaisCoins",
+        "Projet (groupe) durant ma Licence Professionnelle Métier de L'Informatique: Application Web",
+        ["Php", "Mysql","Javascript", "AzureDevOps"],
+        "leMauvaisCoins",
+        "https://lemauvaiscoins.rf.gd",
+        "https://github.com/404diaby/leMauvaisCoins",
+        true,
+        true
+    ),
+    1: new ProjectCard(
         "images/project/sushiShop/1.png",
         "project",
         "SushiShop",
@@ -129,7 +140,7 @@ const projectCardJSON = {
         false
     ),
     10 : new ProjectCard(
-        "images/project/advice-generator-app/1.png",
+        "images/project/advice-generator-app/desktop-design.jpg",
         "project",
         "Advice Generator App",
         "Projet personnel",
@@ -167,7 +178,7 @@ const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample, {
     delay: 3000      // Délai avant le masquage automatique (en millisecondes)
 });
 
-for(let x = 1 ; x <  projectCarouselCells.length ; x++ ){
+for(let x = 0 ; x <  projectCarouselCells.length ; x++ ){
     const card = projectCardTemplate.content.cloneNode(true);
     const img = card.querySelector('.card-img-top');
     img.setAttribute('src',projectCardJSON[x].image_src);
