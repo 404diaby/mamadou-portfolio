@@ -127,6 +127,30 @@ const projectCardJSON = {
         "",
         false,
         false
+    ),
+    10 : new ProjectCard(
+        "images/project/advice-generator-app/1.png",
+        "project",
+        "Advice Generator App",
+        "Projet personnel",
+        ["Html, Css", "Vanilla Javascript","API"],
+        "adviceGeneratorApp",
+        "https://github.com/404diaby/advice-generator-app",
+        "https://advice-generator-app-tau-three.vercel.app/",
+        false,
+        false
+    ),
+    11 : new ProjectCard(
+        "images/project/calculator/1.png",
+        "project",
+        "Calculator",
+        "Projet personnel",
+        ["Html, Css", "Vanilla Javascript"],
+        "calculator",
+        "https://github.com/404diaby/calculator",
+        "https://calculator-five-smoky-95.vercel.app",
+        false,
+        false
     )
 
     // 11 : "APE | | sdis21 | gsbapplifrais |  | advisor generator | CALCULATOR "
