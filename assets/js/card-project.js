@@ -20,7 +20,7 @@ class ProjectCard {
 
 const projectCardJSON = {
     0 : new ProjectCard(
-        "images/project/leMauvaiscoins/1.png",
+        "images/project/leMauvaisCoins/1.png",
         "project",
         "LeMauvaisCoins",
         "Projet (groupe) durant ma Licence Professionnelle Métier de L'Informatique: Application Web",
