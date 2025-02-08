@@ -1,6 +1,6 @@
 
 class ProjectCard {
-    constructor(image_src, img_alt, title, description, techs,extra, github, live, isNew, isComing) {
+    constructor(image_src, img_alt, title, description, techs,extra, github, live, isNew, isComing, isMobileProject) {
         this.image_src = image_src;
         this.img_alt = img_alt;
         this.title = title;
@@ -11,6 +11,7 @@ class ProjectCard {
         this.live = live;
         this.isNew = isNew;
         this.isComing = isComing;
+        this.isMobileProject = isMobileProject;
     }
 
     get extraTarget() {
@@ -26,10 +27,11 @@ const projectCardJSON = {
         "Projet (groupe) durant ma Licence Professionnelle Métier de L'Informatique: Application Web",
         ["Php", "Mysql","Javascript", "AzureDevOps"],
         "leMauvaisCoins",
-        "https://lemauvaiscoins.rf.gd",
         "https://github.com/404diaby/leMauvaisCoins",
+        "https://lemauvaiscoins.rf.gd",
         true,
-        true
+        true,
+        false
     ),
     1: new ProjectCard(
         "images/project/sushiShop/1.png",
@@ -41,7 +43,8 @@ const projectCardJSON = {
         "",
         "https://sushishop.rf.gd/?i=1",
         true,
-        true
+        true,
+        false
     ),
     2 : new ProjectCard(
         "images/project/gsbVisite/1.png",
@@ -53,22 +56,24 @@ const projectCardJSON = {
         "https://github.com/404diaby/gsbVisite",
         "https://gsbvisite.rf.gd/",
         false,
+        false,
         false
     ),
     3: new ProjectCard(
-        "images/project/traducteur_markdown_html/heroPage.jpg",
+        "images/project/intership_manager/1.png",
         "project",
-        "LaBonneAnnonce",
-        "Projet (groupe) durant ma Licence Professionnelle Métier de L'Informatique: Application Web",
-        ["Php", "Mysql", "AzureDevOps"],
-        "traducteurMarkdownHtml",
-        "",
-        "",
+        "Intership Manager",
+        " Projet (seul) commençé durant ma Licence Professionnelle Métier de L'Informatique : Application Web",
+        ["Flutter, Firebase"],
+        "intershipManager",
+        "https://github.com/404diaby/intership_manager",
+        "https://404diaby.github.io/intership_manager/",
+        true,
         true,
         true
     ),
     4 : new ProjectCard(
-        "images/project/gsbVisite/heroPage.jpg",
+        "images/project/mosaiqueOttomane/heroPage.jpg",
         "project",
         "Mosaïque Ottomane",
         "Projet (seul) durant ma Licence Professionnelle Métier de L'Informatique : Application Web",
@@ -77,7 +82,8 @@ const projectCardJSON = {
         "",
         "",
         true,
-        true
+        true,
+        false
     ),
 5: new ProjectCard(
         "images/project/traducteur_markdown_html/heroPage.jpg",
@@ -87,12 +93,13 @@ const projectCardJSON = {
         ["Java", "Html", "Bootstrap", "Vanilla Javascript"],
         "traducteurMarkdownHtml",
         "",
-        "",
+        "https://laila-samali.github.io/Traducteur-Markdown-vers-HTML-Demo.gitub.io/",
         true,
-        true
+        true,
+        false
     ),
     6 : new ProjectCard(
-        "images/project/github-user-search/preview-dark-mode.png",
+        "images/project/github-user-search/1.png",
         "project",
         "Github-user-search",
         "Projet personnel.",
@@ -101,10 +108,11 @@ const projectCardJSON = {
         "https://github.com/404diaby/github-user-search",
         "https://github-user-search-ten-green.vercel.app/",
         false,
+        false,
         false
     ),
     7: new ProjectCard(
-        "images/project/todoApp/heroPage.png",
+        "images/project/todoApp/1.png",
         "project",
         "TodoApp",
         "Projet personnel",
@@ -112,6 +120,7 @@ const projectCardJSON = {
         "todoApp",
         "https://github.com/404diaby/ToDoList",
         "https://404diaby-to-do-list-app.vercel.app/",
+        false,
         false,
         false
     ),
@@ -125,6 +134,7 @@ const projectCardJSON = {
         "https://github.com/404diaby/oldportfolio",
         "https://diaby-mamadou-old-portfolio.vercel.app/index.html",
         false,
+        false,
         false
     ),
     9 : new ProjectCard(
@@ -137,10 +147,24 @@ const projectCardJSON = {
         "",
         "",
         false,
+        false,
         false
     ),
-    10 : new ProjectCard(
-        "images/project/advice-generator-app/desktop-design.jpg",
+    10: new ProjectCard(
+        "images/project/namer/1.png",
+        "project",
+        "Namer",
+        "Projet personnel - Application mobile pour générer des noms aléatoires",
+        ["Flutter"],
+        "namer",
+        "https://github.com/404diaby/namer",
+        "https://404diaby.github.io/namer/",
+        true,
+        false,
+        true
+    ),
+    11 : new ProjectCard(
+        "images/project/advice-generator-app/1.png",
         "project",
         "Advice Generator App",
         "Projet personnel",
@@ -149,9 +173,10 @@ const projectCardJSON = {
         "https://github.com/404diaby/advice-generator-app",
         "https://advice-generator-app-tau-three.vercel.app/",
         false,
+        false,
         false
     ),
-    11 : new ProjectCard(
+    12 : new ProjectCard(
         "images/project/calculator/1.png",
         "project",
         "Calculator",
@@ -160,6 +185,7 @@ const projectCardJSON = {
         "calculator",
         "https://github.com/404diaby/calculator",
         "https://calculator-five-smoky-95.vercel.app",
+        false,
         false,
         false
     )
@@ -182,6 +208,9 @@ for(let x = 0 ; x <  projectCarouselCells.length ; x++ ){
     const card = projectCardTemplate.content.cloneNode(true);
     const img = card.querySelector('.card-img-top');
     img.setAttribute('src',projectCardJSON[x].image_src);
+    if(projectCardJSON[x].isMobileProject){
+        img.classList.add('w-50');
+    }
     if(projectCardJSON[x].isNew) {
         const badgeContainer = card.querySelector('.card-text:first-child');
         const badge = document.createElement("span");
