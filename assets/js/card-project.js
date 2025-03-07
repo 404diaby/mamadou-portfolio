@@ -54,7 +54,7 @@ const projectCardJSON = {
         ["Php", "Html", "Css", "Vanilla Javascript", "MySql"],
         "gsbVisite",
         "https://github.com/404diaby/gsbVisite",
-        "https://gsbvisite.rf.gd/",
+        "",
         false,
         false,
         false
